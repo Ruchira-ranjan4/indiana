@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<style>
+  .instruc {
+    margin: 0px;
+    padding: 2px;
+    border
+}
+p.ptext {
+    border: 2px solid #e7e4e4;
+    padding: 8px;
+    border-radius: 30px;
+    color: #000000;
+    padding: 17px;
+    text-align: justify;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.nav-sidebar>.nav-item {
+  margin-bottom: 15px;
+}
+
+</style>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.jpg" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background:#ecbf55;">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">About us</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Volutner</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Donate</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact us</a>
+      </li>
+       <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Virtual Ballot</a>
+      </li>
+       <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Logout</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+    
+
+      <!-- Messages Dropdown Menu -->
+      
+      
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">THE INDIANA CITIZEN</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar" style="background:#ecbf55;">
+      <!-- Sidebar user panel (optional) -->
+     
+
+      <!-- SidebarSearch Form -->
+    
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="index.html"class="nav-link">
+                <p style="color:black;">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+            
+              MY Representatives 
+                
+              </p>
+            </a>
+            
+          </li>
+         
+          <li class="nav-item">
+            <a href="following.html" class="nav-link">
+              <p style="color:black;">
+              <i class="nav-icon fas fa-thumbs-up"></i>
+              
+            Following
+                
+                
+              </p>
+            </a>
+           
+          </li>
+          <li class="nav-item">
+            <a href="track-legislation.html" class="nav-link">
+               <p style="color:black;">
+              <i class="nav-icon fas fa fa-table"></i>
+             Track legislation
+                
+              </p>
+            </a>
+           
+          </li>
+           <li class="nav-item">
+            <a href="#" class="nav-link">
+               <p style="color:black;">
+              <i class="nav-icon fas fa fa-rss"></i>
+          Newsfeed
+                
+              </p>
+            </a>
+           
+          </li>
+          
+            </ul>
+      
+      </nav>
+      <div class="instruc">
+            <p class="ptext">You can view your representatives by selecting your voting district. If you don’t know your voting district, try typing your address into the search field</p>           </div>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mt-4">
+            <nav class="w-100">
+              <div class="nav nav-tabs" id="product-tab" role="tablist">
+                <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">Candidates Following</a>
+                <a class="nav-item nav-link" id="product-comments-tab" data-toggle="tab" href="#product-comments" role="tab" aria-controls="product-comments" aria-selected="false">Bills Following</a>
+                <a class="nav-item nav-link" id="product-rating-tab" data-toggle="tab" href="#product-rating" role="tab" aria-controls="product-rating" aria-selected="false">Bills We’re Tracking</a>
+              </div>
+            </nav>
+            <div class="tab-content p-3" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab">
+
+
+
+
+
+
+<div class="container-fluid">
+        <div class="row"> 
+          <section class="col-lg-12 connectedSortable">
+           
+                        <div class="row">
+                  <div class="col-md-4">
+            <!-- Box Comment -->
+            <div class="card card-widget">
+             <div class="row">
+             <div class="col-sm-6" >
+              
+              <img src="dist/img/1.jpg" height="200px">
+             
+            </div>
+             <div class="col-sm-6" >
+              
+              <i class="fa fa-map-pin"></i>: Alberta uae<br>
+            <i class="fa fa-id-card"></i> :Indiana House <br>
+            <i class="fa fa-users"></i> : Republican Party<br>
+            <i class="fa fa-map-marker"></i> : Active Bills Sponsored<br>
+            <i class="fa fa-map-marker"></i> : Last bill sponsored<br>
+             
+            </div>
+            <!-- /.card -->
+          </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+            <!-- Box Comment -->
+            <div class="card card-widget">
+             <div class="row">
+             <div class="col-sm-6" >
+              
+              <img src="dist/img/2.jpg" height="200px">
+             
+            </div>
+             <div class="col-sm-6" >
+              
+              <i class="fa fa-map-pin"></i>: Alberta uae<br>
+            <i class="fa fa-id-card"></i> :Indiana House <br>
+            <i class="fa fa-users"></i> : Republican Party<br>
+            <i class="fa fa-map-marker"></i> : Active Bills Sponsored<br>
+            <i class="fa fa-map-marker"></i> : Last bill sponsored<br>
+             
+            </div>
+            <!-- /.card -->
+          </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+            <!-- Box Comment -->
+            <div class="card card-widget">
+             <div class="row">
+             <div class="col-sm-6" >
+              
+              <img src="dist/img/3.jpg" height="200px">
+             
+            </div>
+             <div class="col-sm-6" >
+              
+            <i class="fa fa-map-pin"></i>: Courtenay<br>
+            <i class="fa fa-id-card"></i> :U.S. House <br>
+                                                                                          
+           <i class="fa fa-users"></i> : Republican Party<br>
+           <i class="fa fa-map-marker"></i> : Active Bills Sponsored<br>
+                                            <i class="fa fa-map-marker"></i> : Last bill sponsored<br>
+            </div>
+            <!-- /.card -->
+          </div>
+                </div>
+
+              </div>
+            
+              <div class="col-md-4">
+            <!-- Box Comment -->
+            <div class="card card-widget">
+             <div class="row">
+             <div class="col-sm-6" >
+              
+              <img src="dist/img/4.jpg" height="200px">
+             
+            </div>
+             <div class="col-sm-6" >
+              
+              <i class="fa fa-map-pin"></i>: Alberta uae<br>
+            <i class="fa fa-id-card"></i> :Indiana House <br>
+            <i class="fa fa-users"></i> : Republican Party<br>
+            <i class="fa fa-map-marker"></i> : Active Bills Sponsored<br>
+            <i class="fa fa-map-marker"></i> : Last bill sponsored<br>
+             
+            </div>
+
+            <!-- /.card -->
+          </div>
+                </div>
+
+              </div>
+            <div class="col-md-4">
+            <!-- Box Comment -->
+            <div class="card card-widget">
+             <div class="row">
+             <div class="col-sm-6" >
+              
+              <img src="dist/img/5.jpg" height="200px">
+             
+            </div>
+             <div class="col-sm-6" >
+              
+              <i class="fa fa-map-pin"></i>: Alberta uae<br>
+            <i class="fa fa-id-card"></i> :Indiana House <br>
+            <i class="fa fa-users"></i> : Republican Party<br>
+            <i class="fa fa-map-marker"></i> : Active Bills Sponsored<br>
+            <i class="fa fa-map-marker"></i> : Last bill sponsored<br>
+             
+            </div>
+
+            <!-- /.card -->
+          </div>
+                </div>
+
+              </div>
+         </div>
+            
+       
+</section>
+</div>
+</div>
+ </div>
+
+ <!-----------------------------------------------table-------------------------------------------->
+<div class="tab-pane fade" id="product-comments" role="tabpanel" aria-labelledby="product-comments-tab"> 
+
+
+<section class="content" data-category="2">
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="input-group-append"></div>
+            <!-- /.card -->
+
+            <div class="card">
+               
+             <div class="card-header">
+             
+<label>Display <select name="dynamic-table_length" aria-controls="dynamic-table" class="form-control input-sm"><option value="10">50</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> records</label>
+                <div class="card-tools">
+                  <div class="input-group input-group-sm" style="width: 150px;">
+                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+</div>
+                   
+                  </div>
+                
+            
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Bill</th>
+                    <th> Summary</th> 
+                    <th>Date(Last Action)</th>
+                    <th>Last Action</th>
+                    <th>Follow</th>
+                   
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>SB0266</td>
+                    <td>Department of child services matters.
+                    </td>
+                     <td>57 days ago
+                    </td>
+                    <td>Public Law 173</td>
+                    <td> </td>
+                   
+                    
+                  </tr>
+                  <tr>
+                    <td>SB0130</td>
+                    <td>Statewide assessment results.
+                    </td>
+                     <td>133 days ago
+                    </td>
+                    <td>First reading: referred to Committee on Education and Career Development</td>
+                    <td></td>
+                   
+                  
+                  </tr>
+                 <tr>
+                    <td>HR0043</td>
+                    <td>Reaffirming the commitment of sister ties between Indiana and Taiwan.
+                    </td>
+                     <td>70 days ago
+                    </td>
+                    <td>Representative Morrison added as coauthor</td>
+                    <td> </td>
+                   
+                   
+                  </tr>
+                  <tr>
+                    <td>HJR0003</td>
+                    <td>Removes the superintendent of public instruction from the list of officeholders who shall discharge the powers and duties of the governor if the office of the governor and lieutenant governor are both vacant. This proposed amendment has not been previously agreed to by a general assembly.
+                    </td>
+                     <td>56 days ago
+                    </td>
+                    <td>Public Law 176</td>
+                    <td></td>
+                    
+                   
+                  </tr>
+                  
+                 <tr>
+                    <td>HCR0026</td>
+                    <td>A CONCURRENT RESOLUTION urging the Indiana Department of Transportation to rename the bridge on State Road 57 over the White River between Petersburg and Washington the "Gil Hodges Memorial Bridge".
+                    </td>
+                     <td>76 days ago
+                    </td>
+                    <td>Withdrawn</td>
+                    <td> </td>
+                    
+                   
+                  </tr>
+                  <tr>
+                    <td>HCR0017</td>
+                    <td>A CONCURRENT RESOLUTION condemning religious persecution worldwide.
+                    </td>
+                     <td> No Action History Available
+                    </td>
+                    <td>Mangalam cement Ltd</td>
+                    <td></td>
+                    
+                   
+                  </tr>
+                 <tr>
+                    <td>HB1296</td>
+                    <td>Firearms matters
+                    </td>
+                     <td>57 days ago
+                    </td>
+                    <td>Public Law 1<td> 
+                <td></td>
+
+                   
+                  </tr>
+                  <tr>
+                    <td>HB1260</td>
+                    <td>Department of local government finance.
+                    </td>
+                     <td>57 days ago
+                    </td>
+                    <td>Public Law 174</td>
+                    <td> </td>
+                   
+                    
+                  </tr>
+                 <tr>
+                    <td>HB1167</td>
+                    <td>Bureau of motor vehicles.
+                    </td>
+                     <td>64 days ago
+                    </td>
+                    <td>Public Law 118</td>
+                    <td></td>
+                   
+                   
+                  </tr>
+                  <tr>
+                    <td>HB1094</td>
+                    <td>Education matters.
+                    </td>
+                     <td>63 days ago
+                    </td>
+                    <td>Public Law 140</td>
+                    <td></td>
+                    
+                    
+                  </tr>
+                 
+                  
+                  
+                    
+                
+                </table>
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><a class="page-link" href="#">«</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">»</a></li>
+                </ul>
+                
+            </div>
+          </div>
+          </div>
+          </section>
+
+
+</div>
+</div>
+</div>
+</div><!-- /.container-fluid -->
+</div>
+    
+</div>
+              </div>
+
+
+
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<script>
+   $(document).ready(function() {
+    $('.product-image-thumb').on('click', function () {
+      var $image_element = $(this).find('img')
+      $('.product-image').prop('src', $image_element.attr('src'))
+      $('.product-image-thumb.active').removeClass('active')
+      $(this).addClass('active')
+    })
+  })
+</script>
+</body>
+</html>
