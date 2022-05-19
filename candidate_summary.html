@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<style>
+  .instruc {
+    margin: 0px;
+    padding: 2px;
+    border
+}
+p.ptext {
+    border: 2px solid #e7e4e4;
+    padding: 8px;
+    border-radius: 30px;
+    color: #000000;
+    padding: 17px;
+    text-align: justify;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.nav-sidebar>.nav-item {
+  margin-bottom: 15px;
+}
+.profile-user-img {
+    border: 1px solid #adb5bd;
+    margin: 0 auto;
+    padding: 3px;
+    width: 200px;
+}
+
+</style>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.jpg" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background:#ecbf55;">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">About us</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Volutner</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Donate</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact us</a>
+      </li>
+       <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Virtual Ballot</a>
+      </li>
+       <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Logout</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+    
+
+      <!-- Messages Dropdown Menu -->
+      
+      
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">THE INDIANA CITIZEN</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar" style="background:#ecbf55;">
+      <!-- Sidebar user panel (optional) -->
+     
+
+      <!-- SidebarSearch Form -->
+    
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="index.html"class="nav-link">
+                <p style="color:black;">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+            
+              MY Representatives 
+                
+              </p>
+            </a>
+            
+          </li>
+         
+          <li class="nav-item">
+            <a href="following.html" class="nav-link">
+              <p style="color:black;">
+              <i class="nav-icon fas fa-thumbs-up"></i>
+              
+            Following
+                
+                
+              </p>
+            </a>
+           
+          </li>
+          <li class="nav-item">
+            <a href="track-legislation.html" class="nav-link">
+               <p style="color:black;">
+              <i class="nav-icon fas fa fa-table"></i>
+             Track legislation
+                
+              </p>
+            </a>
+           
+          </li>
+           <li class="nav-item">
+            <a href="#" class="nav-link">
+               <p style="color:black;">
+              <i class="nav-icon fas fa fa-rss"></i>
+          Newsfeed
+                
+              </p>
+            </a>
+           
+          </li>
+          
+            </ul>
+      
+      </nav>
+      <div class="instruc">
+            <p class="ptext">You can view your representatives by selecting your voting district. If you don’t know your voting district, try typing your address into the search field</p>           </div>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+ <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <!-- /.col -->
+        <!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row"> 
+          <section class="col-lg-12 connectedSortable">
+           <div class="container sec">
+
+  <div class="row">
+
+ <div class="text-center">
+                  <img class="profile-user-img img-fluid img-circle"
+                       src="dist/img/1.jpg"
+                       alt="User profile picture">
+                </div>
+
+  <div class="col-md-4">
+
+    <div class="myalignmt">
+
+    <h2><b>Thomas McDermott</b></h2>
+
+    <h6 style="color:#f90;">Democratic</h6>
+
+        <ul class="social">
+
+            <li><a href="#"><i class="fa fab fa-facebook-square"></i></a></li>
+
+            <li><a href="#"><i class="fa fab fa-twitter-square"></i></a></li>
+
+        </ul>
+
+    </div>
+
+  </div>
+
+<div class="col-md-4">
+
+  <div class="btnclass">
+
+    <a href="https://dev.indianacitizen.org/dashboard/my-representative">
+
+    <button type="button" class="btn btn-warning new2">See More Candidate</button>
+
+    </a>
+
+  </div>
+
+<!--  <input type="submit" name="SUBMIT" value="See More Candidate" class="btn btn-warning btn1"> -->
+
+  
+
+</div>
+
+</div>
+
+</div>
+            
+           <div class="row mt-4">
+            <nav class="w-100">
+              <div class="nav nav-tabs" id="product-tab" role="tablist">
+                <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">Bio</a>
+             <a class="nav-item nav-link" id="product-comments-tab" data-toggle="tab" href="#product-comments" role="tab" aria-controls="product-comments" aria-selected="false">Key Votes</a>
+                <a class="nav-item nav-link" id="product-rating-tab" data-toggle="tab" href="#product-rating" role="tab" aria-controls="product-rating" aria-selected="false">Ratings</a>
+
+                <a class="nav-item nav-link" id="issues-tab" data-toggle="tab" href="#issues" role="tab" aria-controls="issues" aria-selected="false">Issues</a>
+
+                <a class="nav-item nav-link" id="tweets-tab" data-toggle="tab" href="#tweets" role="tab" aria-controls="tweets" aria-selected="false">Tweets</a>
+              </div>
+            </nav>
+            <div class="tab-content p-3" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab"> <div class="container myclass1">
+  <div id="tab-1" class="tab-content current">
+    <h3>Summary</h3>
+ <style type="text/css">
+    table
+    {
+        width:100%;
+    }
+    
+    th
+    {
+        width:20%;
+    }
+    td
+    {
+        width:80%;
+    }
+    th,td
+    {
+        padding:5px;
+    }
+    table,tr,td,th
+    {
+        border: solid 2px;
+        border-collapse:collapse;
+    }
+ </style>
+  <table>
+     <tbody><tr><th>Personal</th></tr>
+                 <tr>
+                <th>Full Name : </th>
+                <td>
+                    Thomas M. McDermott                </td>
+            </tr>
+                        <tr>
+            <th>Gender : </th>
+            <td>
+            Male            </td>
+        </tr>
+        
+            <tr>
+            <th>Family : </th>
+            <td>
+            Wife: Marissa; 4 Children: Lindsey, Chase, Thomas, Patrick            </td>
+        </tr>    
+                    <tr>
+            <th>Home City : </th>
+            <td>
+            Hammond            </td>
+        </tr>    
+                    <tr>
+            <th>Religion : </th>
+            <td>
+            Catholic            </td>
+        </tr>            
+                <tr><th>&nbsp;</th></tr>
+                <tr>
+                <th style="vertical-align:top;" rowspan="4">Political Experience</th>
+            </tr>            
+                            <tr>
+                <td>
+                        Candidate, United States Senate, Indiana, 2022                </td>
+            </tr>
+                            <tr>
+                <td>
+                        Candidate, United States House of Representatives, Indiana, District 1, 2020                </td>
+            </tr>
+                            <tr>
+                <td>
+                        Mayor, City of Hammond, Indiana, 2004-present                </td>
+            </tr>
+                    <tr><th>&nbsp;</th></tr>
+                
+    <tr>
+        <th style="vertical-align:top;" rowspan="6">Org Membership</th>
+    </tr>
+            <tr>
+        <td>
+                Executive Board Member, Northwestern Indiana Regional Planning Commission (NIRPC), present        </td>
+    </tr>
+            <tr>
+        <td>
+                Member, Saint John Bosco Parish, present        </td>
+    </tr>
+            <tr>
+        <td>
+                Chair, Lake County Democratic Central Committee        </td>
+    </tr>
+            <tr>
+        <td>
+                Chair, Veterans and Military Families Council, Democratic National Committee        </td>
+    </tr>
+            <tr>
+        <td>
+                Deputy Chair, Indiana Democratic Party        </td>
+    </tr>
+        
+</tbody></table>
+</div>
+
+</div></div>
+              <div class="tab-pane fade" id="product-comments" role="tabpanel" aria-labelledby="product-comments-tab"> <div class="container myclass1">
+  <div id="tab-1" class="tab-content current">
+    <h3>Key Votes</h3>
+           <style type="text/css">
+       table
+       {
+           width:100%;
+       }
+       th
+       {
+           /* background-color:#ccc; */
+           /* color:#000; */
+       }
+       td,th
+       {
+           padding:5px;
+       }
+        /* table, th, td {
+            border: 0px solid black;
+            border-collapse:collapse;
+        } */
+        .table th, .table td {
+            white-space: normal;
+            border-width: 0;
+        }
+        #loading 
+        {
+            margin: 0px;
+            display: none;
+            padding: 0px;
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            z-index: 9999991;
+            opacity: 0.8;
+        }
+
+        #ploading 
+        {
+            position: absolute;
+            color: White;
+            top: 50%;
+            left: 45%;
+        }
+    </style>
+
+  <table class="table table-bordered fontfamily">
+
+    <thead>
+      <tr style="background-color:#f9ae12; color:#fff; border:solid #fff 2px;">
+        <th scope="col" class="bilno">Bill</th>
+        <th scope="col" class="tdwidt">Information</th>
+        <th scope="col" class="yn">Yes/No</th>
+        <!-- <th scope="col" class="action">Action</th>
+        <th scope="col" class="date">Date</th>
+        <th scope="col" class="outcome">Outcome</th> -->
+      </tr>
+    </thead>
+    <tbody>
+    <tr style="border:solid 2px #fff;"><td colspan="3">No Records Found.</td></tr>  </tbody>
+  </table>
+  <div id="loading">
+        <p id="ploading">
+            <img src="https://dev.indianacitizen.org/wp-content/uploads/2022/04/spinning-loading.gif" width="160px" height="110px">
+        </p>
+    </div>
+
+  
+  </div>
+
+</div> </div>
+              <div class="tab-pane fade" id="product-rating" role="tabpanel" aria-labelledby="product-rating-tab"> <div class="container myclass1">
+
+
+   <h3>Ratings</h3>
+  
+       <style type="text/css">
+       table
+       {
+           width:100%;
+       }
+       th
+       {
+           background-color:#ffc107;
+           color:#000;
+       }
+       td,th
+       {
+           padding:5px;
+       }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse:collapse;
+        }
+        #loading 
+        {
+            margin: 0px;
+            display: none;
+            padding: 0px;
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            z-index: 9999991;
+            opacity: 0.8;
+        }
+        #ploading 
+        {
+            position: absolute;
+            color: White;
+            top: 45%;
+            left: 45%;
+        }
+    </style>
+   <table class="fontfamily">                <tbody><tr class="hovefct">
+                    <th>  Guns </th>
+                </tr>
+                <tr>
+                    <td>
+                        <table id="parent_tr37">
+
+                        </table>
+                    </td>
+                </tr>
+        </tbody></table>    <div id="loading">
+        <p id="ploading">
+            <img src="https://dev.indianacitizen.org/wp-content/uploads/2022/04/spinning-loading.gif" width="160px" height="110px">
+        </p>
+    </div>
+    
+
+</div> </div>
+ <div class="tab-pane fade" id="issues" role="tabpanel" aria-labelledby="issues-tab"> No record find</div>
+            </div>
+          </div>
+       
+        
+
+         </section>    
+        </div>   
+     </div>
+   </div>
+    <!-- /.content -->
+  </div>
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<script>
+   $(document).ready(function() {
+    $('.product-image-thumb').on('click', function () {
+      var $image_element = $(this).find('img')
+      $('.product-image').prop('src', $image_element.attr('src'))
+      $('.product-image-thumb.active').removeClass('active')
+      $(this).addClass('active')
+    })
+  })
+</script>
+</body>
+</html>
