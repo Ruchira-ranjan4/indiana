@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<style>
+  .instruc {
+    margin: 0px;
+    padding: 2px;
+    border
+}
+p.ptext {
+    border: 2px solid #e7e4e4;
+    padding: 8px;
+    border-radius: 30px;
+    color: #000000;
+    padding: 17px;
+    text-align: justify;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.nav-sidebar>.nav-item {
+  margin-bottom: 15px;
+}
+
+</style>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.jpg" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background:#ecbf55;">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">About us</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Volutner</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Donate</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact us</a>
+      </li>
+       <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Virtual Ballot</a>
+      </li>
+       <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Logout</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+    
+
+      <!-- Messages Dropdown Menu -->
+      
+      
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">THE INDIANA CITIZEN</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar" style="background:#ecbf55;">
+      <!-- Sidebar user panel (optional) -->
+     
+
+      <!-- SidebarSearch Form -->
+    
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="index.html"class="nav-link">
+                <p style="color:black;">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+            
+              MY Representatives 
+                
+              </p>
+            </a>
+            
+          </li>
+         
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <p style="color:black;">
+              <i class="nav-icon fas fa-thumbs-up"></i>
+              
+            Following
+                
+                
+              </p>
+            </a>
+           
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+               <p style="color:black;">
+              <i class="nav-icon fas fa fa-table"></i>
+             Track legislation
+                
+              </p>
+            </a>
+           
+          </li>
+           <li class="nav-item">
+            <a href="#" class="nav-link">
+               <p style="color:black;">
+              <i class="nav-icon fas fa fa-rss"></i>
+          Newsfeed
+                
+              </p>
+            </a>
+           
+          </li>
+          
+            </ul>
+      
+      </nav>
+      <div class="instruc">
+            <p class="ptext">You can view your representatives by selecting your voting district. If you don’t know your voting district, try typing your address into the search field</p>           </div>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      
+      <div class="container">
+	
+        <form method="GET">
+      
+       <div class="col-sm-12">
+           <label class="labl2" for="postdata">Select Your Interest. </label><br>
+          
+          <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" value="post" name="post">
+        <label class="form-check-label camp-finac " for="inlineCheckbox1">
+          CAMPAIGN FINANCE</label> </div>
+          
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio"  value="candidates" name="post">
+        <label class="form-check-label criml-justi" for="inlineCheckbox2">CRIMINAL JUSTICE</label>
+       </div>
+         <div class="form-check form-check-inline">
+         <input class="form-check-input" type="radio"  value="civic_education" name="post">
+        <label class="form-check-label rnirment" for="inlineCheckbox2">ENVIRONMENT</label>
+         </div>
+         <div class="form-check form-check-inline">
+          <input class="form-check-input data" type="radio"  value="funcding-nonfunding" name="post">
+        <label class="form-check-label economy" for="inlineCheckbox2">ECONOMY</label>
+         </div>
+      
+            
+         
+        <button type="submit" name="Submit" value="Submit" class="btn btn-outline-warning">Search</button>
+          </div>
+        </form>
+        
+        <div class="container">
+            <div class="row test">
+                
+                <div class="col-3">
+                    <a href="#" class="btn btn-outline-warning">Recent News</a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="btn btn-outline-warning">Featured News</a>
+                </div>
+               
+            </div>
+        </div>
+        
+      </div>
+      <br>
+      
+      <div class="container">
+        <div class="row">
+        
+       <div class="col-sm-4 padding"> 
+          <div class="card cardcstm">
+          
+            <div class="card-body">
+            <a  target="_blank" href="#">
+              <h5 class="card-title">Page Title</h5></a>
+             </div>
+          
+            <div class="card-footer">
+           <small class="text-muted">
+              date
+              <div class="postname">
+             Category
+                    
+              </div>
+              </small>
+             </div>
+          
+          </div>
+       </div>
+        
+</div>
+    
+</div>
+ </div>
+
+
+
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<script>
+   $(document).ready(function() {
+    $('.product-image-thumb').on('click', function () {
+      var $image_element = $(this).find('img')
+      $('.product-image').prop('src', $image_element.attr('src'))
+      $('.product-image-thumb.active').removeClass('active')
+      $(this).addClass('active')
+    })
+  })
+</script>
+</body>
+</html>
+
